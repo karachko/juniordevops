@@ -99,6 +99,9 @@ aws ecr create-repository \
 1. docker rmi hello-world:latest
 2. docker pull 076441096872.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest
 
+![picture 1-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-17%20at%2017.26.09.png)
+
+![picture 1-2](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-17%20at%2017.26.09.png)
 
 **Step 9:  pull the Amazon Linux container image from Amazon ECR Public**
 
@@ -114,4 +117,4 @@ docker pull public.ecr.aws/amazonlinux/amazonlinux:latest
 
 docker run -it public.ecr.aws/amazonlinux/amazonlinux /bin/bash
 
-
+ ![picture 1-3](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-17%20at%2018.48.15.png)
