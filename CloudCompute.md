@@ -40,4 +40,6 @@ To connect to your Windows instance using an RDP client
 
 3. Choose Terminate when prompted for confirmation.
 
+
+![picture 1-1-3](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.1/1-1-3.png)
 Amazon EC2 Linux instances—link.
