@@ -65,3 +65,19 @@ docker images --filter reference=hello-world
 5. Run the newly built image. The -p 80:80 option maps the exposed port 80 on the container to port 80 on the host system. For more information about docker run, go to the Docker run reference.
 
 docker run -t -i -p 80:80 hello-world
+
+**Step 5: Authenticate to your default registry**
+
+ 1. aws configure
+ 
+AWS Access Key ID [****************6872]: A*****D
+AWS Secret Access Key [****************25fl]: 0*******25fl
+Default region name [None]: us-east-1
+Default output format [None]: 
+
+2. aws ecr get-login-password
+
+3. aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 076441096872.dkr.ecr.us-east-1.amazonaws.com
+
+
+
