@@ -71,9 +71,9 @@ AWS Systems Manager Session Manager
    
    in terminal 
    
-   ` sudo ln -s /folder/installed/aws-cli/aws /usr/local/bin/aws
+   ` sudo ln -s /folder/installed/aws-cli/aws /usr/local/bin/aws `
    
-     sudo ln -s /folder/installed/aws-cli/aws_completer /usr/local/bin/aws_completer. ` 
+   ` sudo ln -s /folder/installed/aws-cli/aws_completer /usr/local/bin/aws_completer. ` 
      
    1.1. SSH client
    Connect to your Linux instance using an SSH client
