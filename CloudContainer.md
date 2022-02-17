@@ -128,3 +128,5 @@ docker pull amazonlinux
 2. (Optional) Run the container locally.
 
 docker run -it amazonlinux:latest /bin/bash
+
+![picture 1-4](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-17%20at%2018.55.17.png)
