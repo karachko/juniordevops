@@ -35,7 +35,7 @@ touch Dockerfile
 2. Edit the Dockerfile you just created and add the following content.
 
 ```
-ROM ubuntu:18.04
+FROM ubuntu:18.04
 
 # Install dependencies
 RUN apt-get update && \
