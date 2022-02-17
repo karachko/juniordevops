@@ -23,6 +23,27 @@
 **Step 2: Connect to your instance**
 
 If your local computer operating system is Windows
+
+To connect to your Windows instance using an RDP client
+
+Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/.
+
+In the navigation pane, select Instances. Select the instance and then choose Connect.
+
+On the Connect to instance page, choose the RDP client tab, and then choose Get password.
+
+
+Choose Browse and navigate to the private key (.pem) file you created when you launched the instance. Select the file and choose Open to copy the entire contents of the file to this window.
+
+Choose Decrypt Password. The console displays the default administrator password for the instance under Password, replacing the Get password link shown previously. Save the password in a safe place. This password is required to connect to the instance.
+
+Choose Download remote desktop file. WindowServer.rdp
+
+Launch Microsoft Remote Desktop
+
+![picture 1-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-17%20at%2015.33.38.png)
+
+
 PuTTY
 
 SSH client
@@ -39,7 +60,7 @@ AWS Systems Manager Session Manager
 3. Choose Terminate when prompted for confirmation.
 
 
-![picture 1-1-3](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.1/1-1-3.png)
+
 
 
 ### Amazon EC2 Linux instances—link.
