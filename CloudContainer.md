@@ -80,4 +80,17 @@ Default output format [None]:
 3. aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 076441096872.dkr.ecr.us-east-1.amazonaws.com
 
 
+**Step 6:  Create a repository**
+```
+aws ecr create-repository \
+    --repository-name hello-world \
+    --image-scanning-configuration scanOnPush=true \
+    --region region
+```
+
+**Step 7: Push an image to Amazon ECR**
+
+1. docker images
+2. docker tag hello-world:latest 076441096872.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest
+3. docker push 076441096872.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest
 
