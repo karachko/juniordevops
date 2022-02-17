@@ -94,3 +94,24 @@ aws ecr create-repository \
 2. docker tag hello-world:latest 076441096872.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest
 3. docker push 076441096872.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest
 
+**Step 8: Pull an image from Amazon ECR**
+
+1. docker rmi hello-world:latest
+2. docker pull 076441096872.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest
+
+
+**Step 9:  pull the Amazon Linux container image from Amazon ECR Public**
+
+1. Authenticate your Docker client to the Amazon Linux Public registry. Authentication tokens are valid for 12 hours.
+
+aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
+
+2. Pull the Amazon Linux container image using the docker pull command. 
+
+docker pull public.ecr.aws/amazonlinux/amazonlinux:latest
+
+3. Run the container locally.
+
+docker run -it public.ecr.aws/amazonlinux/amazonlinux /bin/bash
+
+
