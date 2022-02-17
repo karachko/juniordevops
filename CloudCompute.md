@@ -65,26 +65,16 @@ AWS Systems Manager Session Manager
 
 
 1. If your local computer operating system is Linux or macOS X
-   install the AWS CLI on macOS
-   
-   download the macOS pkg file: https://awscli.amazonaws.com/AWSCLIV2.pkg
-   
-   in terminal 
-   
-   ` sudo ln -s /folder/installed/aws-cli/aws /usr/local/bin/aws `
-   
-   ` sudo ln -s /folder/installed/aws-cli/aws_completer /usr/local/bin/aws_completer. ` 
+
      
    1.1. SSH client
    Connect to your Linux instance using an SSH client
-   ssh -i /path/my-key-pair.pem my-instance-user-name@my-instance-public-dns-name
+   chmod 400 myKey.pem
+   ssh -o "IdentitiesOnly=yes" -i myKey.pem ec2-user@ec2-18-233-0-217.compute-1.amazonaws.com
    
    1.2. EC2 Instance Connect
 
    1.3. AWS Systems Manager Session Manager
-
-
-
 
 
 **Step 3: Clean up your instance**
