@@ -118,3 +118,13 @@ docker pull public.ecr.aws/amazonlinux/amazonlinux:latest
 docker run -it public.ecr.aws/amazonlinux/amazonlinux /bin/bash
 
  ![picture 1-3](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-17%20at%2018.48.15.png)
+ 
+ **Step 9:  To pull the Amazon Linux container image from Docker Hub** 
+ 
+ 1. Pull the Amazon Linux container image using the docker pull command.
+
+docker pull amazonlinux
+
+2. (Optional) Run the container locally.
+
+docker run -it amazonlinux:latest /bin/bash
