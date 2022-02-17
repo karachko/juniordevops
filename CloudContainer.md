@@ -55,3 +55,13 @@ EXPOSE 80
 
 CMD /root/run_apache.sh
 ```
+3. Build the Docker image from your Dockerfile.
+
+docker build -t hello-world .
+4. Run docker images to verify that the image was created correctly.
+
+docker images --filter reference=hello-world
+
+5. Run the newly built image. The -p 80:80 option maps the exposed port 80 on the container to port 80 on the host system. For more information about docker run, go to the Docker run reference.
+
+docker run -t -i -p 80:80 hello-world
