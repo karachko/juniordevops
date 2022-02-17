@@ -72,7 +72,7 @@ AWS Systems Manager Session Manager
    chmod 400 myKey.pem
    ssh -o "IdentitiesOnly=yes" -i myKey.pem ec2-user@ec2-18-233-0-217.compute-1.amazonaws.com
    
-   [Amazon EC2 Linux instances](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-17%20at%2015.16.07.png)   
+   ![picture 1-2](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-17%20at%2015.16.07.png)   
    
    1.2. EC2 Instance Connect
 
