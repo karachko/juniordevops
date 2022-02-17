@@ -109,7 +109,7 @@ AWS Systems Manager Session Manager
 3. Choose Terminate when prompted for confirmation.
 
 ### Launch  EC2 Linux using terraform
-`
+```
 provider "aws" {
   region     = "us-east-1"
   access_key = "*****"
@@ -164,4 +164,5 @@ resource "aws_instance" "example" {
  
   tags = {
     Name = "WEBWORDPRESS"
-         } `
+         } 
+ ```
