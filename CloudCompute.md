@@ -2,7 +2,7 @@
 ### Amazon EC2 Windows instances—link.
 
 [Amazon EC2 Windows instances]: https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/EC2_GetStarted.html
-
+[Amazon EC2 Windows instances](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/EC2_GetStarted.html)
 **Step 1: Launch an instance**
 
 1. To launch an instance
