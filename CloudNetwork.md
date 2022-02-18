@@ -29,3 +29,45 @@ Leave the rest of the default configurations on the page, and then select to Cre
 
 ![picture 1-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-18%20at%2013.00.01.png)
 ![picture 1-2](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-18%20at%2013.00.30.png)
+
+
+## task 2
+### Configured security groups that specify allow rules, separated rules for inbound and outbound traffic, and enable you to filter traffic based on protocols and port numbers.
+
+Open the Amazon VPC console.
+
+In the navigation pane, choose Security Group
+.
+Select to Create a security group.
+
+Enter the Name and Description for the security group.
+
+From VPC, choose the VPC.
+
+Add security group rule.
+
+For each rule, select Add rule and do the following:
+
+For Type, choose the type of protocol to allow:
+
+For TCP or UDP, enter the port range to allow.
+
+For custom ICMP, choose the ICMP type name from Protocol, and, if applicable, the code name from the Port range.
+
+For any other type, the protocol and port range is configured automatically.
+
+For Source (inbound rules) or Destination (outbound rules), do one of the following to allow traffic:
+
+Choose Custom, and then enter an IP address in CIDR notation, a CIDR block, another security group, or a prefix list.
+
+Choose Anywhere to allow traffic from any IP address to reach your instances (inbound rules) or to allow traffic from your instances to reach all IP addresses 
+(outbound rules). Note: This option automatically adds the 0.0.0.0/0 IPv4 CIDR block.
+
+If your security group is in a VPC that's enabled for IPv6, this option automatically adds a rule for the ::/0 IPv6 CIDR block.
+
+For inbound rules, this option is acceptable for a short time in a test environment but is unsafe for production environments. In production, authorize only a specific IP address or range of addresses to access your instances.
+
+Choose My IP to allow traffic only from (inbound rules) or to (outbound rules) your local computer's public IPv4 address.
+
+For Description, specify a brief description of the rule.
+
