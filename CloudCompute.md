@@ -61,8 +61,7 @@ AWS Systems Manager Session Manager
 
 
 
-
-
+## task 2
 ### Amazon EC2 Linux instances—link.
 [Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
 
