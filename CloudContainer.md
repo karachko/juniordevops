@@ -154,11 +154,22 @@ git config --global user.email karachkonatasha@ukr.net
 
 git init
 
-5. Add file Dockerfille into repo 
+5. Create a new branch and switchon it
+
+
+git checkout -b dockerrepo
+
+git branch
+
+
+6. Add file Dockerfille into repo 
 
 git add Dockerfile
 
-6. Make the commit
+git status 
+
+
+7. Make the commit
 
 git commit -m "Add file Dockerfil to main branch"
 
@@ -169,4 +180,4 @@ git remote add origin  https://github.com/karachko/juniordevops.git
 
 git push https://<<yourtoken>>@github.com/karachko/juniordevops.git/
  
- 
+git push --set-upstream https://<<yourtoken>>/karachko/juniordevops.git/ dockerrepo
