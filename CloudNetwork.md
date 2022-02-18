@@ -27,3 +27,5 @@ Note: You can leave the default hexadecimal pair value for the IPv6 subnet (00).
 Leave the rest of the default configurations on the page, and then select to Create VPC.
 
 
+![picture 1-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-18%20at%2013.00.01.png)
+![picture 1-2](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-18%20at%2013.00.30.png)
