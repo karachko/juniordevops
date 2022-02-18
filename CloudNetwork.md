@@ -104,5 +104,5 @@ From the Allow/Deny list, select Allow to allow the specified traffic or Deny to
 
 After you've finished, select Save.
 
-
-
+![picture 3-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-18%20at%2013.29.08.png)
+![picture 3-2](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-18%20at%2013.29.32.png)
