@@ -1,5 +1,5 @@
-## task 2
-### Amazon Linux container image—link
+## task 1
+### Created and pushed base container image into the Container Registry.
 
 
 [Amazon Linux container image](https://docs.aws.amazon.com/AmazonECR/latest/userguide/amazon_linux_container_image.html)
@@ -130,3 +130,7 @@ docker pull amazonlinux
 docker run -it amazonlinux:latest /bin/bash
 
 ![picture 1-4](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-17%20at%2018.55.17.png)
+
+
+## task 2
+### A Docker file is published into a source code management system.
