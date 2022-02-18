@@ -71,3 +71,6 @@ Choose My IP to allow traffic only from (inbound rules) or to (outbound rules) y
 
 For Description, specify a brief description of the rule.
 
+![picture 2-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-18%20at%2013.08.00.png)
+![picture 2-2](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-18%20at%2013.08.00.png)
+
