@@ -142,9 +142,9 @@ git --version
 
 2. Set up  variables in "Git Bash"
 
-git config --global user.name "karachko"
+git config --global user.name "k******o"
 
-git config --global user.email karachkonatasha@ukr.net
+git config --global user.email k*****ha@ukr.net
 
 3. Clone the repo to my workstation
  
