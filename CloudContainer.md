@@ -134,3 +134,39 @@ docker run -it amazonlinux:latest /bin/bash
 
 ## task 2
 ### A Docker file is published into a source code management system.
+1. Install git on my Mac workstation
+
+brew install git
+
+git --version
+
+2. Set up  variables in "Git Bash"
+
+git config --global user.name "karachko"
+
+git config --global user.email karachkonatasha@ukr.net
+
+3. Clone the repo to my workstation
+ 
+ git clone https://github.com/karachko/juniordevops.git
+ 
+4. Exucute git init (Эта команда создаёт в текущем каталоге новый подкаталог с именем .git, содержащий все необходимые файлы репозитория — структуру Git репозитория.)
+
+git init
+
+5. Add file Dockerfille into repo 
+
+git add Dockerfile
+
+6. Make the commit
+
+git commit -m "Add file Dockerfil to main branch"
+
+
+7. Push the repo to github
+
+git remote add origin  https://github.com/karachko/juniordevops.git
+
+git push https://<<yourtoken>>@github.com/karachko/juniordevops.git/
+ 
+ 
