@@ -74,3 +74,33 @@ For Description, specify a brief description of the rule.
 ![picture 2-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-18%20at%2013.08.00.png)
 ![picture 2-2](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-18%20at%2013.08.00.png)
 
+
+## task 3
+### Configured ACL that allows specific types of traffic and ports
+
+Open the Amazon VPC console.
+
+In the navigation pane, choose Network ACLs.
+
+Select Create Network ACL.
+
+In the Create Network ACL dialog, optionally name your network ACL, and select the ID of your VPC from the VPC list.
+
+Select Yes, Create.
+
+In the details pane, choose either the Inbound Rules or Outbound Rules tab, depending on the type of rule that you need to add, and then select Edit.
+
+In Rule #, enter the rule number (for example, 100).
+
+Note: The rule number must not already be in use in the network ACL.
+
+Select a rule from the Type list. For example, to add the rule for HTTP, select HTTP. To add the rule to allow all TCP traffic, select All TCP.
+
+ If the protocol you selected requires a port number, enter the port number or the port range separated by a hyphen (for example, 49152-65535).
+ 
+In the Source or Destination field (depending on whether this is an inbound or outbound rule), enter the CIDR range that the rule applies to.
+
+From the Allow/Deny list, select Allow to allow the specified traffic or Deny to deny the specified traffic.
+
+After you've finished, select Save.
+
