@@ -83,7 +83,12 @@ The principle of least privilege requires that a user be given no more privilege
 
 ## Described bastion host with its advantages and disadvantages.
 
-A bastion host is a server whose purpose is to provide access to a private network from an external network, such as the Internet. Because of its exposure to potential attack, a bastion host must minimize the chances of penetration.Disadvantages of bastion hosts
+A bastion host is a server whose purpose is to provide access to a private network from an external network, such as the Internet. Because of its exposure to potential attack, a bastion host must minimize the chances of penetration.
+
+What is an SSH Bastion?
+An SSH bastion host is a regular Linux host, accessible from the Internet. What makes it a bastion is the fact that it’s the only server which accepts SSH connections from the outside. If a user wants to access another machine, they need to connect to the bastion first, and then make another SSH connection from the bastion to the final destination. Sometimes this process is called “jumping” and SSH bastions are also called “jump hosts”.
+
+The process of “jumping” can be automated, i.e. an SSH client can be configured to “jump” automatically and we’ll cover this below.
 
 
 The disadvantages are:
