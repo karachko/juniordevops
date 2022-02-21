@@ -34,11 +34,6 @@ Non-repudiation systems use digital signatures to ensure that one party cannot 
 
 
 
-
-
-
-
-
 ## task 2
 ### Demonstrate an ability to sign in to any of SCM providers (such as GitHub, GitLab, or Bitbucket) using an SSH key.
 
@@ -60,9 +55,8 @@ $ ssh -T git@github.com
 ![picture 1-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-21%20at%2015.28.01.png)
 
 
-
-
-
+## task 3
+### Demonstrate the ability to login to Linux host using non-root account and escalate own permissions.
 
 
 
