@@ -78,15 +78,18 @@ su - test
 
 
 - Described configured principles of the least access privileges model.
+
 The principle of least privilege requires that a user be given no more privileges than necessary to perform his/her job function.9 By limiting access to only the required users, the risk introduced is reduced to an acceptable and manageable level.
 
 - Described bastion host with its advantages and disadvantages.
+
 A bastion host is a server whose purpose is to provide access to a private network from an external network, such as the Internet. Because of its exposure to potential attack, a bastion host must minimize the chances of penetration.Disadvantages of bastion hosts
 
 
 The disadvantages are:
 
 It is generally used only for SSH access to remote servers
+
 To access applications running on a private network, for example, on port 8080, bastion is not the solutio- Described implemented shared responsibility model.
 
 
