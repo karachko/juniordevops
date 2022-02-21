@@ -74,6 +74,8 @@ su - test
 # Secure network infrastructure
 
 - Examples of cloud configuration (NACLs, SGs).
+[Examples of cloud configuration (NACLs, SGs).](https://github.com/karachko/juniordevops/blob/main/CloudNetwork.md)
+
 
 - Described configured principles of the least access privileges model.
 - Described bastion host with its advantages and disadvantages.
