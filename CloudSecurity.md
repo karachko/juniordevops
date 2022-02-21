@@ -71,18 +71,13 @@ sudo adduser test
 su - test
 
 
+# Secure network infrastructure
+
+- Examples of cloud configuration (NACLs, SGs).
+
+- Described configured principles of the least access privileges model.
+- Described bastion host with its advantages and disadvantages.
+- Described implemented shared responsibility model.
 
 
 
-
-
-
-
-
-1.  Using the S3 console
-[How to Create S3 Bucket in AWS Step by Step](https://cloudkatha.com/how-to-create-s3-bucket-in-aws-step-by-step/)
-- 
-- Configure source code management (SCM) client with an SSH key (Git).
-- Create non-admin users for connecting to the hosts
-![picture 1-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-21%20at%2011.00.40.png)
-![picture 1-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-21%20at%2011.00.40.png)
