@@ -58,10 +58,17 @@ $ ssh -T git@github.com
 ## task 3
 ### Demonstrate the ability to login to Linux host using non-root account and escalate own permissions.
 
+1. Log in to aws server
 
+ssh -i m11111y.pem ubuntu@ec21111117.compute-1.amazonaws.com
 
+2. Add user
 
+sudo adduser test
 
+3. Log in with test user 
+
+su - test
 
 
 
