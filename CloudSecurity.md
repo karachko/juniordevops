@@ -17,14 +17,19 @@ ssh-add -K ~/.ssh/id_ed25519
 
 5. cat id_ed25519.pub
 
-6. Open **GitHub.com** -  **Settings - SSH and GPG keys - Add SSH key**
+
+## task 2
+### Configure source code management (SCM) client with an SSH key (Git).
+
+
+1. Open **GitHub.com** -  **Settings - SSH and GPG keys - Add SSH key**
 
 In the "Title" field, add a descriptive label for the new key. 
 For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
 
 Paste your key into the "Key" field.
 
-7. Testing your SSH connection
+2. Testing your SSH connection
 
 Open Terminal.
 
