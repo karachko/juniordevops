@@ -73,15 +73,15 @@ su - test
 
 # Secure network infrastructure
 
-- Examples of cloud configuration (NACLs, SGs).
+## Examples of cloud configuration (NACLs, SGs).
 [Examples of cloud configuration (NACLs, SGs).](https://github.com/karachko/juniordevops/blob/main/CloudNetwork.md)
 
 
-- Described configured principles of the least access privileges model.
+## Described configured principles of the least access privileges model.
 
 The principle of least privilege requires that a user be given no more privileges than necessary to perform his/her job function.9 By limiting access to only the required users, the risk introduced is reduced to an acceptable and manageable level.
 
-- Described bastion host with its advantages and disadvantages.
+## Described bastion host with its advantages and disadvantages.
 
 A bastion host is a server whose purpose is to provide access to a private network from an external network, such as the Internet. Because of its exposure to potential attack, a bastion host must minimize the chances of penetration.Disadvantages of bastion hosts
 
@@ -95,6 +95,6 @@ To access applications running on a private network, for example, on port 8080, 
 
 
 
-- Described implemented shared responsibility model.
+## Described implemented shared responsibility model.
 
 For example, in IaaS, the cloud provider supplies and is responsible for securing basic cloud infrastructure components, such as virtual machines, disks and networks, according to the CSCC. The provider is also responsible for the physical security of the data centers that house its infrastructure. IaaS users, on the other hand, are generally responsible for the security of the operating system and software stack required to run their applications, as well as their data.Simply put, the cloud provider is responsible for the security of the cloud, while the customer is responsible for security in the cloud. Essentially, your cloud provider is responsible for making sure your infrastructure built within its platform is inherently secure and reliable.
