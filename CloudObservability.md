@@ -65,4 +65,4 @@ Choose Create Alarm.
 
 
 
-![picture 1-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-21%20at%2012.41.50.png)
+![picture 2-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-21%20at%2013.10.10.png)
