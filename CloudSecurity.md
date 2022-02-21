@@ -83,6 +83,8 @@ The principle of least privilege requires that a user be given no more privilege
 
 ## Described bastion host with its advantages and disadvantages.
 
+[Setting Up an SSH Bastion Host](https://goteleport.com/blog/ssh-bastion-host/)
+
 A bastion host is a server whose purpose is to provide access to a private network from an external network, such as the Internet. Because of its exposure to potential attack, a bastion host must minimize the chances of penetration.
 
 What is an SSH Bastion?
