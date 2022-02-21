@@ -17,9 +17,30 @@ ssh-add -K ~/.ssh/id_ed25519
 
 5. cat id_ed25519.pub
 
+**Describe the concept of public and private keys and specify when to use each type**
+
+Public-key cryptography, or asymmetric cryptography, is a cryptographic system that uses pairs of keys. Each pair consists of a public key (which may be known to others) and a private key (which may not be known by anyone except the owner). The generation of such key pairs depends on cryptographic algorithms which are based on mathematical problems termed one-way functions. Effective security requires keeping the private key private; the public key can be openly distributed without compromising security.[1]
+In such a system, any person can encrypt a message using the intended receiver's public key, but that encrypted message can only be decrypted with the receiver's private key. This allows, for instance, a server program to generate a cryptographic key intended for a suitable symmetric-key cryptography, then to use a client's openly-shared public key to encrypt that newly generated symmetric key. The server can then send this encrypted symmetric key over an insecure channel to the client; only the client can decrypt it using the client's private key (which pairs with the public key used by the server to encrypt the message). With the client and server both having the same symmetric key, they can safely use symmetric key encryption (likely much faster) to communicate over otherwise-insecure channels. This scheme has the advantage of not having to manually pre-share symmetric keys (a fundamentally difficult problem) while gaining the higher data throughput advantage of symmetric-key cryptography.
+
+Compared to symmetric encryption, asymmetric encryption is rather slower than good symmetric encryption, too slow for many purposes.
+
+
+Two of the best-known uses of public key cryptography are:
+	•	Public key encryption, in which a message is encrypted with the intended recipient's public key. For properly chosen and used algorithms, messages cannot in practice be decrypted by anyone who does not possess the matching private key, who is thus presumed to be the owner of that key and so the person associated with the public key. This can be used to ensure confidentiality of a message.
+	•	Digital signatures, in which a message is signed with the sender's private key and can be verified by anyone who has access to the sender's public key. This verification proves that the sender had access to the private key, and therefore is very likely to be the person associated with the public key. This also ensures that the message has not been tampered with, as a signature is mathematically bound to the message it originally was made from, and verification will fail for practically any other message, no matter how similar to the original message.
+The most obvious application of a public key encryption system is for encrypting communication to provide confidentiality – a message that a sender encrypts using the recipient's public key which can be decrypted only by the recipient's paired private key.
+Another application in public key cryptography is the digital signature. Digital signature schemes can be used for sender authentication.
+Non-repudiation systems use digital signatures to ensure that one party cannot successfully dispute its authorship of a document or communication.
+
+
+
+
+
+
+
 
 ## task 2
-### Configure source code management (SCM) client with an SSH key (Git).
+### Demonstrate the ability to login to Linux host using non-root account and escalate own permissions source code management (SCM) client with an SSH key (Git).
 
 
 1. Open **GitHub.com** -  **Settings - SSH and GPG keys - Add SSH key**
