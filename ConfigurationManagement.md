@@ -287,8 +287,17 @@ roles/php/tasks/install.yml
 
 8. 
 Create file: roles/php/tasks/main.yml
-
+```
 ---
 # tasks file for php
 - import_tasks: install.yml
+
+```
+9.
+
+Apply the playbook
+
+ansible-playbook app.yml
+
+
 
