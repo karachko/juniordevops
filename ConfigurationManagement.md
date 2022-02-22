@@ -183,3 +183,7 @@ https://fitdevops.in/deploy-lamp-stack-on-aws-ec2-instance-using-cloudformation/
 
 **Code Cloud Formation**
 https://github.com/karachko/juniordevops/blob/main/template1
+
+
+# task 2
+## Store configuration files in the version control system to keep track of any changes in infrastructure code
