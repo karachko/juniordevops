@@ -159,4 +159,9 @@ The main page of WordPress will be displayed
 ![picture 1-2](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2012.58.20.png)
 
 
+**Ansible ad-hoc commands**
+
+
+
+
 
