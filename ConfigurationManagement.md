@@ -204,3 +204,49 @@ terraform plan
 terraform apply
 
 ![picture 1-14](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2016.08.21.png)
+
+# task 3
+## Use infrastructure as a code tool for provisioning infrastructure (all requests from the list in description)
+### Configuring app server environment with Roles(apache role (which will Install httpd package, Start httpd service, Add a handler to restart service) and php role(install php and php-mysql, restart apache when packages are installed))
+
+https://ansible-tutorial.schoolofdevops.com/roles/
+
+1. Generate role scaffolding using ansible-galaxy
+
+ansible-galaxy init --offline --init-path=roles  apache
+
+2. To install apache, Create roles/apache/tasks/install.yml
+
+```
+---
+  - name: install apache web server
+    apt:
+      name: apache2
+      state: latest
+
+
+```
+3. To start the service, create roles/apache/tasks/service.yml with the following content
+
+```
+---
+  - name: start apache webserver
+    service:
+      name: apache2
+      state: started
+      enabled: true
+
+```
+
+4. To have these tasks being called, include them into main task.
+
+Edit roles/apache/tasks/main.yml
+
+```
+# tasks file for apache
+  - import_tasks: install.yml
+  - import_tasks: service.yml
+
+
+
+```
