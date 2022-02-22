@@ -187,3 +187,20 @@ https://github.com/karachko/juniordevops/blob/main/template1
 
 # task 2
 ## Store configuration files in the version control system to keep track of any changes in infrastructure code
+
+### Launch a docker with Nginx server using terraform
+
+1. Install docker in Ubuntu
+https://docs.docker.com/engine/install/ubuntu/
+
+https://github.com/karachko/juniordevops/blob/main/main.tf
+
+**The engineer should execute following commands**
+
+terraform init
+
+terraform plan
+
+terraform apply
+
+![picture 1-14](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2016.08.21.png)
