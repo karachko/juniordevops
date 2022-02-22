@@ -40,6 +40,8 @@ terraform -v
 - sudo pip install ansible
 - ansible --version
 
+- sudo apt-get install python-mysqldb
+
 **The engineer  should install git on local machine**
 
 - sudo apt install git
@@ -73,3 +75,13 @@ sudo systemctl restart ssh
 ansible webwordpress -m ping
 
 ![picture 1-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2013.40.49.png)
+
+
+**The engineer  should clone the git repository ”ansible-playbooks”  on local machine**
+
+- git clone https://github.com/do-community/ansible-playbooks.git
+- cd ansible-playbooks/wordpress-lamp_ubuntu1804
+
+
+ansible-playbook playbook.yml -u sammy -kK
+
