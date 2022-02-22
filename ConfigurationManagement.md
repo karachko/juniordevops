@@ -8,7 +8,7 @@ Example of Artifacts:
 - Documents or articles about running ad-hoc commands by using some configuration management tools (for example, Ansible, Chef, or Puppet) on the project.
 
 
-### Launch a VM and install wordpress on it using terraform and ansible!
+### Launch a VM and install wordpress on it using terraform and ansible
 
 **The engineer  should install terraform on local machine**
 
@@ -72,37 +72,4 @@ sudo systemctl restart ssh
 
 ansible webwordpress -m ping
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[Manually or automatically created a virtual network in a cloud that includes at least one of the following items: public IP address, subnet, network interface.](https://confluence.softserveinc.com/display/SDO/Cloud+Network)
-
-
-![picture 2-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-18%20at%2013.08.00.png)
+![picture 1-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2013.40.49.png)
