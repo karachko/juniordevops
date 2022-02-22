@@ -56,13 +56,6 @@ terraform -v
 - git clone https://github.com/do-community/ansible-playbooks.git
 - cd ansible-playbooks/wordpress-lamp_ubuntu1804
 
-**Without terraform on existing local machine*
-ansible-playbook playbook.yml -u sammy -kK
-
-![picture 1-2](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2012.58.20.png)
-
-
-**with terraform**
 
 **The engineer  should copy the key myKey.pem(generate this key)  to directory ~/ansible-playbooks/wordpress-lamp_ubuntu1804**
 
