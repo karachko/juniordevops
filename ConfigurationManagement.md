@@ -82,10 +82,115 @@ ansible webwordpress -m ping
 - git clone https://github.com/do-community/ansible-playbooks.git
 - cd ansible-playbooks/wordpress-lamp_ubuntu1804
 
-
+**Without terraform on existing local machine*
 ansible-playbook playbook.yml -u sammy -kK
 
 ![picture 1-2](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2012.58.20.png)
+
+
+**with terraform**
+
+**The engineer  should copy the key myKey.pem(generate this key)  to directory ~/ansible-playbooks/wordpress-lamp_ubuntu1804**
+
+The engineer should set up permition 400 on file myKey.pem
+
+chmod 400 myKey.pem
+
+**The engineer should create file main.tf in the directory  ~/ansible-playbooks/wordpress-lamp_ubuntu1804**
+
+```
+provider "aws" {
+    region     = "us-east-1"
+    access_key = "***"
+    secret_key = "***l"
+}
+ 
+variable "key_name" {
+    type = string
+    default = "myKey"
+}
+ 
+variable "ssh_key_private" {
+    type = string
+    default = "myKey.pem"
+}
+ 
+ 
+resource "aws_security_group" "instance" {
+    name = "terraform-example-instance3"
+    ingress {
+       from_port = 22
+       to_port = 22
+       protocol = "tcp"
+       cidr_blocks = ["0.0.0.0/0"]
+    }
+    ingress {
+        from_port = 80
+        to_port = 80
+        protocol = "tcp"
+        cidr_blocks = ["0.0.0.0/0"]
+   }
+   ingress {
+      from_port        = 443
+      to_port          = 443
+      protocol         = "tcp"
+      cidr_blocks      = ["0.0.0.0/0"]
+  }
+ 
+  egress {
+      from_port        = 0
+      to_port          = 0
+      protocol         = "-1"
+      cidr_blocks      = ["0.0.0.0/0"]
+  }
+ 
+}
+ 
+resource "aws_instance" "example" {
+    ami           = " ami-0747bdcabd34c712a"
+    instance_type = "t2.micro"
+    key_name   = "myKey"
+  
+ 
+    vpc_security_group_ids = [aws_security_group.instance.id] 
+ 
+    tags = {
+       Name = "WEBWORDPRESS"
+                }
+   
+provisioner "remote-exec" {
+        inline = ["sudo apt update", "sudo apt install python3", "echo Done!"]
+        connection {
+            host        = "${aws_instance.example.public_ip}"
+            type        = "ssh"
+            user        = "ubuntu"
+            private_key="${file("/home/vm1/ansible-playbooks/wordpress-lamp_ubuntu1804/myKey.pem")}"
+        }
+  }
+ 
+  provisioner "local-exec" {
+      command = "sleep 7m;ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -u ubuntu -i '${aws_instance.example.public_ip},' --private-key ${var.ssh_key_private} playbook.yml"
+  }
+
+}
+
+```
+
+
+
+**The engineer should execute following commands**
+
+terraform init
+
+terraform plan
+
+terraform apply
+
+**The engineer should open the browser and enter “aws_instance.example.public_ip”. **
+
+The main page of WordPress will be displayed
+![image](https://user-images.githubusercontent.com/36982811/155126692-596d56c6-d296-467c-a930-7c39f4526820.png)
+
 
 
 
