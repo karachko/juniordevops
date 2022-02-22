@@ -180,3 +180,6 @@ https://fitdevops.in/deploy-lamp-stack-on-aws-ec2-instance-using-cloudformation/
 ![picture 1-11](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2011.03.41.png)
 ![picture 1-12](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2011.03.47.png)
 ![picture 1-14](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2011.06.56.png)
+
+**Code Cloud Formation**
+https://github.com/karachko/juniordevops/blob/main/template1
