@@ -300,4 +300,4 @@ Apply the playbook
 ansible-playbook app.yml
 
 
-
+![picture 1-14](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2019.51.58.png)
