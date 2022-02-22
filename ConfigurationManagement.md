@@ -49,32 +49,6 @@ terraform -v
 - git --version
 
 
-**The engineer should generate the key**
-
-- mkdir .ssh
-- cd ssh
-- ssh-keygen
-- chmod 600 ~/.ssh/id_rsa && chmod 644 ~/.ssh/id_rsa.pub
-- ssh-copy-id ubuntu@52.203.242.121
-
-- sudo nano /etc/ansible/hosts
-
-[webwordpress]
-
-ubuntu@52.203.242.121 ansible_ssh_private_key_file=/home/ubuntu/.ssh/id_rsa
-
-
-- sudo nano /etc/ssh/sshd_config
-
-PubkeyAuthentication yes
-
-PasswordAuthentication yes
-
-sudo systemctl restart ssh
-
-ansible webwordpress -m ping
-
-![picture 1-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2013.40.49.png)
 
 
 **The engineer  should clone the git repository ”ansible-playbooks”  on local machine**
@@ -189,8 +163,7 @@ terraform apply
 **The engineer should open the browser and enter “aws_instance.example.public_ip”. **
 
 The main page of WordPress will be displayed
-![image](https://user-images.githubusercontent.com/36982811/155126692-596d56c6-d296-467c-a930-7c39f4526820.png)
-
+![picture 1-2](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2012.58.20.png)
 
 
 
