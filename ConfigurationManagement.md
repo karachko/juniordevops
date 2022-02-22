@@ -85,3 +85,7 @@ ansible webwordpress -m ping
 
 ansible-playbook playbook.yml -u sammy -kK
 
+![picture 1-2](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2012.58.20.png)
+
+
+
