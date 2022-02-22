@@ -169,6 +169,13 @@ The main page of WordPress will be displayed
 ![picture 1-7](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2014.02.39.png)
 
 
+### Launch a VM and install LAMP on it using CloudFormation
 
+https://fitdevops.in/deploy-lamp-stack-on-aws-ec2-instance-using-cloudformation/
 
-
+![picture 1-8](https://https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2011.00.05.png)
+![picture 1-9](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2011.00.12.png)
+![picture 1-10](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2011.02.54.png)
+![picture 1-11](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2011.03.41.png)
+![picture 1-12](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2011.03.47.png)
+![picture 1-14](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2011.06.56.png)
