@@ -250,3 +250,45 @@ Edit roles/apache/tasks/main.yml
 
 
 ```
+
+5. Create a playbook for app servers app.yml(in the directory /home/ubuntu) with following contents
+```
+  ---
+  - hosts: localhost
+    become: true
+    roles:
+      - apache
+      - php
+      
+ ```     
+6.  Create the notification handler by updating roles/apache/handlers/main.yml
+
+``` 
+--
+  - name: Restart apache service
+    service: name=apache2 state=restarted
+```
+7. 
+Generate roles 
+
+roles/php/tasks/install.yml
+```
+---
+# install php related packages
+  - apt: install php
+    package:
+      name: "{{ item }}"
+      state: installed
+    with_items:
+      - php
+      - php-mysql
+    notify: Restart apache service
+```
+
+8. 
+Create file: roles/php/tasks/main.yml
+
+---
+# tasks file for php
+- import_tasks: install.yml
+
