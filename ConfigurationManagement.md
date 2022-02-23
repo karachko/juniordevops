@@ -628,4 +628,4 @@ erraform {
 ![picture 1-16](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-23%20at%2018.02.57.png)
 
 
-![picture 1-17](://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-23%20at%2018.39.06.png)
+![picture 1-17](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-23%20at%2018.39.06.png)
