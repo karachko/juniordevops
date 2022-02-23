@@ -303,8 +303,16 @@ ansible-playbook app.yml
 ![picture 1-14](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-22%20at%2019.51.58.png)
 
 
+### Terraform files with modules structure that describe the minimum valuable version of a cloud environment (for example, VPC, EC2, private or public subnets, IG, SG, IAM).
 
+1. I installed the latest version of terraform 
+https://computingforgeeks.com/how-to-install-terraform-on-ubuntu/
 
-https://learn.hashicorp.com/tutorials/terraform/module-create
+2. I use this link to do this task
 
 https://github.com/terraform-aws-modules/terraform-aws-vpc/tree/master/examples/network-acls
+
+
+![picture 1-15](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-23%20at%2018.02.26.png)
+
+![picture 1-16](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-23%20at%2018.02.57.png)
