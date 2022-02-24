@@ -66,10 +66,10 @@ ssh-copy-id student@34.229.156.25
 - sudo cp /home/student/.ssh/id_rsa.pub  /var/lib/jenkins/.ssh/
 - sudo chown -R jenkins:jenkins /var/lib/jenkins/.ssh
 
-5
+5.
 - On the Gihub Setting-SSH and GPG keys - New SSH keys
 - (jenkins keys)
 - cat id_rsa.pub
 
 6. In Jenkins I set up credentials
-7
+![picture 1-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-24%20at%2017.28.33.png)
