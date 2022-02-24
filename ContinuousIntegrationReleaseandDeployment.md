@@ -45,3 +45,26 @@ I selected EC2 from All services on AWS
 - sudo passwd student
 - sudo mkdir /home/student
 - sudo chown student:student /home/student
+
+4. 
+- On the Jenkins sever
+- I executed (su - student)
+- I created the pair of keys with (ssh-keygen). In the folder .ssh the keys(id_rsa and id_rsa.pub) were cteated.
+
+- On the Apache Server I installed ssh (sudo apt-get install ssh)
+- sudo nano /etc/ssh/sshd_config (AllowUsers student, PasswordAuthentication yes , PubkeyAuthentication yes)
+- sudo systemctl restart sshd
+
+- On the Jenkins sever
+- I copied public key to /home/student/.ssh/authorized_keys using the command 
+ssh-copy-id student@34.229.156.25
+
+- On the Jenkins sever(I copied the keys to /var/lib/jenkins/.ssh/)
+- cd  /var/lib/jenkins/
+- sudo mkdir .ssh
+- sudo cp /home/student/.ssh/id_rsa  /var/lib/jenkins/.ssh/
+- sudo cp /home/student/.ssh/id_rsa.pub  /var/lib/jenkins/.ssh/
+- sudo chown -R jenkins:jenkins /var/lib/jenkins/.ssh
+
+
+
