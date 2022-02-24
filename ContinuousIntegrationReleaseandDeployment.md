@@ -70,3 +70,6 @@ ssh-copy-id student@34.229.156.25
 - On the Gihub Setting-SSH and GPG keys - New SSH keys
 - (jenkins keys)
 - cat id_rsa.pub
+
+6. In Jenkins I set up credentials
+7
