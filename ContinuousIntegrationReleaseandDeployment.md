@@ -73,3 +73,29 @@ ssh-copy-id student@34.229.156.25
 
 6. In Jenkins I set up credentials for SSH
 ![picture 1-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-24%20at%2017.28.33.png)
+
+7. I created "Build" "Deploy" pipeline
+
+```
+
+pipeline {
+    agent any
+    
+    stages {
+    
+        stage('Build') {
+            steps {
+                git 'https://github.com/karachko/FinalTask'
+            }
+        }
+    
+        stage('Deploy') {
+            steps {
+                sh "scp -v -o StrictHostKeyChecking=no index.html student@34.201.76.183:/home/student"
+            }
+        }
+        
+    }
+}
+
+```
