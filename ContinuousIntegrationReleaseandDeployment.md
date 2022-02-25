@@ -169,4 +169,13 @@ pipeline {
 
 
 ```
+## task 2
+### AWS CodePipeline
 
+**Support an existed Continuous Delivery/Deployment (CD) flow**
+
+1. AWS Elastic beanstalk-Create app
+
+2. Web app is available from the link
+
+3. AWS CodePipeline-create pipeline (deploy on created Elastic beanstalk server)
