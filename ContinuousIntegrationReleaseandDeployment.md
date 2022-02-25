@@ -176,6 +176,12 @@ pipeline {
 
 1. AWS Elastic beanstalk-Create app
 
+![picture 2-1](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-25%20at%2017.27.14.png)
+
 2. Web app is available from the link
+
+![picture 2-2](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-25%20at%2011.51.59.png)
+
+
 
 3. AWS CodePipeline-create pipeline (deploy on created Elastic beanstalk server)
