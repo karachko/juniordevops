@@ -185,3 +185,11 @@ pipeline {
 
 
 3. AWS CodePipeline-create pipeline (deploy on created Elastic beanstalk server)
+
+![picture 2-3](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-25%20at%2011.54.33.png)
+
+![picture 2-4](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-25%20at%2011.59.03.png)
+
+![picture 2-5](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-25%20at%2012.02.26.png)
+
+![picture 2-6](https://github.com/karachko/juniordevops/blob/main/Screenshot%202022-02-25%20at%2015.08.59.png)
